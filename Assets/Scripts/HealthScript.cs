@@ -9,6 +9,8 @@ public class HealthScript : MonoBehaviour {
 	PhotonView view;
 	Text TxtHealth;
 	Text TxtHealthOther;
+	Image healthBar;
+	Image healthBarOther;
 
 
 	// Use this for initialization
@@ -17,6 +19,12 @@ public class HealthScript : MonoBehaviour {
 		view = GetComponent<PhotonView> ();
 		TxtHealth = GameObject.Find ("TxtHealth").GetComponent<Text> ();
 		TxtHealthOther = GameObject.Find ("TxtHealthOther").GetComponent<Text> ();
+
+		healthBar = GameObject.Find ("HealthBar").GetComponent<Image> ();
+		healthBarOther = GameObject.Find ("HealthBarOther").GetComponent<Image> ();
+
+		healthBar.fillAmount = health / 100f;
+		healthBarOther.fillAmount = health / 100f;
 	
 	}
 
@@ -28,6 +36,7 @@ public class HealthScript : MonoBehaviour {
 			health -= 10;
 			TxtHealth.text = "Player 1: " + health + "%";
 			view.RPC ("damageOther", PhotonTargets.Others, health);
+			healthBar.fillAmount = health / 100f;
 		}
 
 	}
@@ -54,5 +63,6 @@ public class HealthScript : MonoBehaviour {
 	void damageOther(int health)
 	{
 		TxtHealthOther.text = "Player 2; " + health + "%";
+		healthBarOther.fillAmount = health / 100f;
 	}
 }

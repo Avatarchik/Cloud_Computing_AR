@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{0E83AB9E-A732-247A-2966-CE98FCA0BD4D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShootTankScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BulletExplosionScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/ShootTankScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BulletExplosionScript.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

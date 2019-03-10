@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{50E4A07E-60A5-EAB0-FB51-2263D996EE3C}</ProjectGuid>
+    <ProjectGuid>{7E60A766-F1CC-41A7-CB39-F539CBC518D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -61,55 +61,68 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Plugins\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
     <None Include="Assets\Plugins\release_history.txt" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <Reference Include="Unity.XR.ARKit">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.FaceSubsystem">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit.FaceTracking">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARExtensions">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARExtensions.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARExtensions.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARExtensions.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARKit.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -315,26 +328,26 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>/Users/johnyuan/Downloads/arfoundation-samples-master/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>/Users/johnyuan/Documents/CS219/Cloud_Computing_AR/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

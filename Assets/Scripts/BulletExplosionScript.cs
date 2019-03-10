@@ -18,10 +18,12 @@ public class BulletExplosionScript : MonoBehaviour {
 	
 	void OnCollisionEnter (Collision Col)
 	{
-		if (view.isMine) 
+        GetComponent<SphereCollider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+
+        if (view.isMine) 
 		{
-			GetComponent<SphereCollider> ().enabled = false;
-			GetComponent<MeshRenderer> ().enabled = false;
+
 			GameObject explosion = PhotonNetwork.Instantiate ("Explosion", transform.position, Quaternion.identity, 0) as GameObject;
 
 		}

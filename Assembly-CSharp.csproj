@@ -211,6 +211,7 @@
     <Compile Include="Assets\Scripts\ARWorldMapController.cs" />
     <Compile Include="Assets\Scripts\BulletExplosionScript.cs" />
     <Compile Include="Assets\Scripts\CameraConfigController.cs" />
+    <Compile Include="Assets\Scripts\CanvasOnTankScript.cs" />
     <Compile Include="Assets\Scripts\destroyExplosionScript.cs" />
     <Compile Include="Assets\Scripts\DisableVerticalPlanes.cs" />
     <Compile Include="Assets\Scripts\HealthScript.cs" />

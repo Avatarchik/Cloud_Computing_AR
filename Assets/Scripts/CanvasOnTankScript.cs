@@ -19,7 +19,7 @@ public class CanvasOnTankScript : MonoBehaviour {
 		} 
 		else 
 		{
-			playerName.text = "The Enemy";
+			playerName.text = "OTHER";
 			playerName.color = new Color (1, 0.92f, 0.016f, 1); 
 		}
 		

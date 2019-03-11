@@ -79,7 +79,7 @@ public class NetworkManagerScript : MonoBehaviour {
 
 		int randomX = Random.Range (-40, +40);
 
-		PhotonNetwork.Instantiate ("Tank", new Vector3 (randomX, 0, -50), Quaternion.identity, 0);
+		PhotonNetwork.Instantiate ("Tank", new Vector3 (randomX, -20, 50), Quaternion.identity, 0);
 	}
 	
 

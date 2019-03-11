@@ -18,5 +18,7 @@ EditorBuildSettings:
     path: Assets/Mutiplayertankgame.unity
     guid: d7c4c02d5375545668072ed5551fe3f6
   m_configObjects:
+    com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 57c601a2136944f2cb5cdba41901c9b2,
+      type: 2}
     com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 2d5fb8e61571b4e3897f221189089fd6,
       type: 2}

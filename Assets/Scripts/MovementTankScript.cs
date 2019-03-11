@@ -34,7 +34,7 @@ public class MovementTankScript : MonoBehaviour {
 			float yValue = CrossPlatformInputManager.GetAxis ("Vertical");
 
 			Vector3 movement = new Vector3 (xValue, 0, yValue);
-			rb.velocity = movement * 7f;
+			rb.velocity = movement * 15f;
 
 			if (xValue != 0 && yValue != 0) 
 			{

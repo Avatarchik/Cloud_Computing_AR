@@ -5,15 +5,22 @@ using UnityEngine.UI;
 
 public class NetworkManagerScript : MonoBehaviour {
 
+
 	public Text TextInfos;
 	public Transform SpawnPoint1;
 	public Transform SpawnPoint2;
+	public GameObject[] players;
+	private bool gameStarted = false;
+	Text TxtHealth;
+	Text TxtHealthOther;
+	Text newGameText;
+
 
 	// Use this for initialization
 	void Start () {
 
 		PhotonNetwork.ConnectUsingSettings ("v01");
-
+		newGameText = GameObject.Find ("newGameText").GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
@@ -21,13 +28,60 @@ public class NetworkManagerScript : MonoBehaviour {
 
 		if (PhotonNetwork.connectionStateDetailed.ToString () != "Joined") {
 			TextInfos.text = PhotonNetwork.connectionStateDetailed.ToString ();
-		} 
-		else 
-		{
+		} else {
 			TextInfos.text = "Connected to " + PhotonNetwork.room.name + " Player(s) Online: " + PhotonNetwork.room.PlayerCount;
 		}
-		
+
+
+		players = GameObject.FindGameObjectsWithTag ("Player");
+
+		if (players.Length == 2) 
+		{
+			gameStarted = true;
+		}
+
+		if (gameStarted) 
+		{
+
+			if (players.Length <= 1) 
+			{
+				for (int i = 0; i < players.Length; i++) 
+				{
+					Destroy (players [i]);
+					StartCoroutine (startNewRound ());
+					gameStarted = false;
+
+					TxtHealth = GameObject.Find ("TxtHealth").GetComponent<Text> ();
+					TxtHealthOther = GameObject.Find ("TxtHealthOther").GetComponent<Text> ();
+					TxtHealth.text = "Player 1 100%";
+					TxtHealthOther.text = "Player 2 100%";
+
+				}
+			}
+		}
 	}
+
+
+
+	IEnumerator startNewRound()
+	{
+		newGameText.text = "3";
+		yield return new WaitForSeconds (1f);
+		newGameText.text = "2";
+		yield return new WaitForSeconds (1f);
+		newGameText.text = "1";
+		yield return new WaitForSeconds (1f);
+		newGameText.text = "GO";
+		yield return new WaitForSeconds (1f);
+		newGameText.text = " ";
+
+		//StartCoroutine (SpawnMyPlayer ());
+
+		int randomX = Random.Range (-40, +40);
+
+		PhotonNetwork.Instantiate ("Tank", new Vector3 (randomX, 0, -50), Quaternion.identity, 0);
+	}
+	
 
 
 	void OnConnectedToMaster()
@@ -60,14 +114,16 @@ public class NetworkManagerScript : MonoBehaviour {
 
 	IEnumerator SpawnMyPlayer()
 	{
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (1f);
 		GameObject MyPlayer = PhotonNetwork.Instantiate ("Tank", SpawnPoint1.position, Quaternion.identity, 0) as GameObject;
+
 	}
 
 	IEnumerator SpawnMyPlayer2()
 	{
 		yield return new WaitForSeconds (1);
 		GameObject MyPlayer = PhotonNetwork.Instantiate ("Tank", SpawnPoint2.position, Quaternion.identity, 0) as GameObject;
+
 	}
 		
 }

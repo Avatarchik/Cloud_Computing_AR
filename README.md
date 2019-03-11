@@ -1,14 +1,9 @@
-# AR Foundation Samples
-Example projects that use *AR Foundation* and demonstrate its functionality with sample assets and components.
+## Cloud computing with AR.
+The goal of this repo is to build a AR game with Unity.
+The game is a multiplayer PVP game using Photon as the server DB.
 
-Compatible with Unity 2018.3.
+## Instructions for installing AR 
 
-## Instructions for installing AR Foundation
-
-1. Download the latest version of Unity 2018.3
-
-2. Open Unity and load the project at the root of the *arfoundation-samples* repository
-
-3. Open your choice of sample scene.
-
-4. See the [AR Foundation Documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@1.0) for usage instructions and more information.
+1. Install Unity and open project
+2. Create your own Unity and Photon Accts
+3. Run builds on IOS of Andriod
